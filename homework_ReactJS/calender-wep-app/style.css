@@ -1,0 +1,384 @@
+.red {
+    background-color: red;
+}
+.blue {
+    background-color: blue;
+}
+
+.yellow {
+    background-color: yellow;
+}
+
+.green {
+    background-color: green;
+}
+
+.grey {
+    background-color: grey;
+}
+
+.side {
+    max-width: 100%;
+    display: flex;
+    height: 750px;
+}
+.side__left {
+    width: 25%;
+    background-color: rgb(32, 105, 179);
+    position: relative;
+}
+.side__right {
+    width: 75%;
+    background-color: rgb(177, 186, 197);
+    position: relative;
+}
+.task {
+    position: absolute;
+    top: 50px;
+    left: 50px;
+    bottom: 40px;
+    right: 0;
+    background-color: rgb(193, 193, 206);
+    border-top-left-radius: 5px;
+    border-bottom-left-radius: 5px;
+    box-shadow: 0 0 5px 0 rgb(204, 169, 169);
+}
+.task__title {
+    height: 50px;
+    box-shadow: 2px 2px 2px 1px rgba(0, 0, 0, 0.2);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.search{
+    margin-left: 40px;
+}
+
+.nav {
+    margin-right: 40px;
+}
+/* style for img */
+.task__profile {
+    
+}
+.task__img {
+    border-radius: 50%;
+    width: 60px;
+    height: 60px;
+    margin-left: 140px;
+    margin-top: 30px;
+}
+
+.task_info {
+    display: flex;
+    flex-direction: column;
+}
+
+.task__info p {
+    margin: auto;
+}
+
+.task__info p:first-child {
+    margin-top: 15px;
+    font-weight: 500;
+    font-size: 20px;
+    margin-left: 110px;
+}
+.task__info p:last-child {
+    margin-left: 80px;
+    margin-bottom: 15px;
+}
+
+.task__nav {
+    display: flex;
+    justify-content: space-around;
+} 
+
+.task__nav i {
+    background-color: rgb(233, 181, 113);
+    width: 20px;
+    height: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 25%;
+}
+
+.task__todo {
+    display: flex;
+    justify-content: space-around;
+    padding-bottom: 30px;
+    border-bottom: 2px solid rgb(214, 203, 203); 
+}
+
+.task__todo p:first-child {
+    display: flex;
+    justify-content: center;
+}
+
+.task__completed {
+    display: flex;
+    flex-direction: column;
+}
+
+.task__completed p:first-child {
+    font-size: 25px;
+    font-family: 'Courier New', Courier, monospace;
+}
+
+.task__completed p:last-child {
+    display: flex;
+    flex-direction: column;
+}
+.projects {
+    padding: 0px 0 10px 30px;
+    border-bottom: 2px solid rgb(214, 203, 203);
+}
+.projects h1 {
+    padding-bottom: 20px;
+    font-size: 20px;
+}
+
+.projects li {
+    padding: 5px 0;
+}
+
+.projects i {
+    border-radius: 50%;
+}
+
+.team {
+    padding: 10px 0 10px 30px;
+}
+
+.team h1 {
+    padding-bottom: 20px;
+    font-size: 20px;
+}
+.team__img {
+    display: flex;
+}
+
+.team__member {
+    margin-right: 20px;
+}
+
+.team__member img {
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+}
+
+.calendar {
+    position: absolute;
+    top: 50px;
+    bottom: 40px;
+    left: 0;
+    right: 50px;
+    background-color: rgb(159, 159, 175);
+}
+
+.calendar__header {
+    height: 50px;
+    box-shadow: 2px 2px 2px 1px rgba(0, 0, 0, 0.2) ;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.calendar__header input {
+    background-color: rgb(159, 159, 175);
+}
+
+.calendar__header form i {
+    transform: translateY(4px);
+}
+
+.calendar__header h4 {
+    margin-right: 220px;
+    font-weight: 500;
+    font-size: 30px;
+}
+
+.calendar__toogle {
+    display: flex;
+    justify-content: space-between;
+    padding: 20px 0;
+}
+
+.calendar__btn1 {
+    margin-left: 50px;
+}
+
+.calendar__btn1 button {
+    border-radius: 5px;
+}
+
+.calendar__btn2 button {
+    border-radius: 5px; 
+}
+.calendar__btn2 {
+    margin-right: 50px;
+}
+.calendar__month {
+    display: flex;
+}
+
+.calendar__month i {
+    padding: 0 10px;
+}
+
+.calendar__center {
+    background-color: beige;
+    margin-left: 50px;
+    border-radius: 8px;
+    width: 1001px;
+}
+
+.calendar__days {
+    display: flex;
+}
+
+.calendar__days li {
+    width: 200.2px;
+    padding: 15px 0;
+    border-right: 2px solid rgb(214, 203, 203);
+    border-bottom: 2px solid rgb(214, 203, 203);
+    display: flex;
+    justify-content: center;
+}
+
+/* .calendar__days li:last-child {
+    border-right: 0;
+    border-top-right-radius: 8px;
+} */
+
+#calendar__row1 {
+    display: flex;
+}
+#calendar__row2 {
+    display: flex;
+}
+#calendar__row3 {
+    display: flex;
+}
+#calendar__row4 {
+    display: flex;
+}
+#calendar__row5 {
+    display: flex;
+}
+
+#calendar__row1 li {
+    width: 200.2px;
+    border-right: 2px solid rgb(214, 203, 203);
+    border-bottom: 2px solid rgb(214, 203, 203);
+    padding: 35px 0;
+    display: flex;
+    justify-content: center;
+}
+#calendar__row2 li {
+    width: 200.2px;
+    border-right: 2px solid rgb(214, 203, 203);
+    border-bottom: 2px solid rgb(214, 203, 203);
+    padding: 35px 0;
+    display: flex;
+    justify-content: center;
+}
+#calendar__row3 li {
+    width: 200.2px;
+    border-right: 2px solid rgb(214, 203, 203);
+    border-bottom: 2px solid rgb(214, 203, 203);
+    padding: 35px 0;
+    display: flex;
+    justify-content: center;
+}
+#calendar__row4 li {
+    width: 200.2px;
+    border-right: 2px solid rgb(214, 203, 203);
+    border-bottom: 2px solid rgb(214, 203, 203);
+    padding: 35px 0;
+    display: flex;
+    justify-content: center;
+}
+#calendar__row5 li {
+    width: 200.2px;
+    border-right: 2px solid rgb(214, 203, 203);
+    border-bottom: 2px solid rgb(214, 203, 203);
+    padding: 35px 0;
+    display: flex;
+    justify-content: center;
+}
+.weekends {
+    display: none;
+}
+
+.add__task {
+    position: absolute;
+    width: 380px;
+    height: 270px;
+    background-color: red;
+    background-color: rgb(177, 186, 197);
+    border-radius: 8px;
+}
+
+input {
+    border-width:0px;
+    border:none;
+}
+
+.add__category {
+    background-color: antiquewhite;
+    width: 100px;
+    height: 24px;
+    border-radius: 5px;
+    margin: 15px 30px;
+    display: flex;
+    justify-content: space-around;
+    padding: 4px 0;
+}
+
+.add__work {
+    display: flex;
+    justify-content: left;
+    margin: 30px 0;
+    margin-left: 30px;
+}
+.add__work i {
+    margin-right: 15px;
+    font-size: 30px;
+    color: antiquewhite;
+}
+
+.add__work input {
+    background-color: antiquewhite;
+}
+
+.add__script {
+    display: flex;
+    justify-content: left;
+    margin-left: 30px;
+    width: 245px;
+    background-color: antiquewhite;
+    font-size: 24px;
+}
+
+.add__task button {
+    display: flex;
+    margin-left: 30px;
+}
+
+.add__task {
+    display: none;
+    position: absolute;
+    right: 0;
+    top: 250px;
+    border: 5px solid rgb(214, 203, 203);
+}
+
+.add__task input {
+    background-color: antiquewhite;
+    margin-left: 30px;
+}

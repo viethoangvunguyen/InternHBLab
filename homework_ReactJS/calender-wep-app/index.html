@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <link rel="stylesheet" type="text/css" href="reset.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" rel="stylesheet">
+    <title>Calender Web App</title>
+</head>
+<body>
+    <div class="side">
+        <div class="side__left">
+            <div class="task">
+                <div class="task__title">TASK MANAGER</div>
+                <div class="task__profile">
+                    <img class="task__img" src="https://bizweb.dktcdn.net/100/409/603/files/bao-gia-in-anh-the-lay-ngay.jpg?v=1631007146881" alt="avatar"/>
+                    <div class="task__info">
+                        <p>Natalie Smith</p>
+                        <p>natalie.smith@gmail.com</h6>
+                    </div>
+                    <div class="task__nav">
+                        <i class="fas fa-cog"></i>
+                        <i class="fas fa-comment"></i>
+                        <i class="fas fa-bell"></i>
+                    </div>
+                    <div class="grey" style="height:14px;width:100px; margin: 20px 15px;"></div>
+                    <div class="task__todo">
+                        <div class="task__completed"><p>12</p><p>Completed <br>tasks</p></div>
+                        <div class="task__completed"><p>22</p><p>Todo <br>tasks</p></div>
+                        <div class="task__completed"><p>69</p><p>All <br>completed</p></div>
+                    </div>
+                <div class="projects">
+                    <h1>Projects</h1>
+                    <ul>
+                        <li> <i class="far fa-circle red"></i> Marketing</li>
+                        <li> <i class="far fa-circle yellow"></i> Design</li>
+                        <li> <i class="far fa-circle green"></i> Development</li>
+                        <li> <i class="far fa-circle blue"></i> Finance</li>
+                    </ul>
+                </div>
+                <div class="team">
+                    <h1>Team</h1>
+                    <ul class="team__img">
+                        <li class="team__member"><a href="#"><img src="https://toplist.vn/images/800px/dino-studio-anh-vien-cho-be-va-gia-dinh-317623.jpg"></a></li>
+                        <li class="team__member"><a href="#"><img src="https://static.yeah1music.net/uploads/editors/2020/03/02/sao-viet-anh-the-6-5e5ce18c77901.jpg"></a></li>
+                        <li class="team__member"><a href="#"><img src="https://phunugioi.com/wp-content/uploads/2021/10/Nhung-mau-anh-the-dep-tip-chup-anh-the-dep-1.jpg"></a></li>
+                        <li class="team__member"><a href="#"><img src="https://ngheannews.com/wp-content/uploads/2020/04/chup-anh-the-o-vinh-3.jpg"></a></li>
+                        <li class="team__member"><a href="#"><img src="https://upload.wikimedia.org/wikipedia/commons/1/10/%E1%BA%A2nh-th%E1%BA%BB-v%C6%B0%E1%BB%A3ng.png"></a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="side__right">
+        <div class="calendar">
+            <div class="calendar__header">
+                <form>
+                    <i class="search fas fa-search"></i>
+                    <input type="text" id="search" placeholder="Search ..."/>
+                </form>
+                <h4>Calendar</h4>
+                <i class=" nav fas fa-ellipsis-h"></i>
+            </div>
+            <div class="calendar__main">
+                <div class="calendar__toogle">
+                    <div class="calendar__btn1">
+                        <button class="blue">Week</button>
+                        <button>Month</button>
+                    </div>
+                    <div class="calendar__month">
+                        <i class="fas fa-angle-left"></i>
+                        <p>October<br>2018</p>
+                        <i class="fas fa-angle-right"></i>
+                    </div>
+                    <div class="calendar__btn2">
+                        <button id="btn__weekends">Weekends</button>
+                        <button class="blue" id="btn__addtask">Add tasks</button>
+                    </div>
+                </div>
+                <div class="calendar__center">
+                    <ul class="calendar__days">
+                        <li>Monday</li>
+                        <li>Tuesday</li>
+                        <li>Wednesday</li>
+                        <li>Thursday</li>
+                        <li>Friday</li>
+                    </ul>
+                    <ul id="calendar__row1">
+                        <li>31</li>
+                        <li>1</li>
+                        <li>2</li>
+                        <li>3</li>
+                        <li>4</li>
+                    </ul>
+                    <ul id="calendar__row2">
+                        <li>7</li>
+                        <li>8</li>
+                        <li>9</li>
+                        <li>10</li>
+                        <li>11</li>
+                    </ul>
+                    <ul id="calendar__row3">
+                        <li>14</li>
+                        <li>15</li>
+                        <li>16</li>
+                        <li>17</li>
+                        <li>18</li>
+                    </ul>
+                    <ul id="calendar__row4">
+                        <li>21</li>
+                        <li>22</li>
+                        <li>23</li>
+                        <li>24</li>
+                        <li>25</li>
+                    </ul>
+                    <ul id="calendar__row5">
+                        <li>28</li>
+                        <li>29</li>
+                        <li>30</li>
+                        <li>1</li>
+                        <li>2</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="add__task"> 
+        <div class="add__category">
+            <i class="fas fa-plus"></i>
+            Category
+        </div>
+        <input type="date" id="start" name="trip-start" value="2018-12-31" min="2018-01-01" max="2018-12-31">
+        <div class="add__work">
+            <i class="fas fa-check-circle"></i>
+            <input placeholder="Title of the task">
+        </div>
+        <input class="add__script" placeholder="description ..."><br>
+        <button class="blue">Add tasks</button>
+    </div>
+    </div>
+    <script src="index.js"></script>
+</body>
+</html>
